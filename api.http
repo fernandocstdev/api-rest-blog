@@ -1,0 +1,28 @@
+### Recuperar todos los articulos
+GET http://localhost:1234/articles
+
+### Recuperar todos los articulos filttrados
+GET http://localhost:1234/articles?sort=desc
+
+### Recuperar un articulo por id
+GET http://localhost:1234/articles/65440354af61e520c37233b6
+
+###
+POST http://localhost:1234/articles
+Content-Type: application/json
+
+{
+  "title": "prueba 3",
+	"content": "contenido de prueba 3"
+}
+
+### Borrar un articulo
+DELETE http://localhost:1234/articles/654416c6df704f245f7a832c
+
+### Actualizar un articulo
+PATCH http://localhost:1234/articles/6544152e57405d4d8df671dd
+Content-Type: application/json
+
+{
+  "title": "Cambieeee :)"
+}
